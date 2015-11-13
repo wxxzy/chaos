@@ -37,6 +37,33 @@
       <version>${spring.version}</version>
     </dependency>
     <!-- springframe end -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-orm</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <!--hibernate-->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>${hibernate.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>c3p0</groupId>
+      <artifactId>c3p0</artifactId>
+      <version>0.9.1.2</version>
+    </dependency>
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.31</version>
+    </dependency>
+    <!-- 添加oracle jdbc driver -->
+    <dependency>
+      <groupId>com.oracle</groupId>
+      <artifactId>ojdbc14</artifactId>
+      <version>10.2.0.4.0</version>
+    </dependency>
     <!--为了正常的使用springMVC中的valid，这是因为springMVC中的valid只提供了接口的实现，
     如果想使用这个接口，就必须要导入它的实现——hibernate-validator-->
     <dependency>
