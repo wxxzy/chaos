@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 /**
- * Created by Mungo on 2015/11/13.
+ * Created by  on 2015/11/13.
  */
 @Repository
 public class BisBatchImportInfoDaoImpl implements BisBatchImportInfoDao {
