@@ -29,8 +29,8 @@ public class MainController {
         return  bisBatchImportInfoService.getAllUsernames();
     }
     @RequestMapping("/json2")
-    @ResponseBody
+    //@ResponseBody
     public String json2() {
-        return "this is json";
+        return "index";
     }
 }

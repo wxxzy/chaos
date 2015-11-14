@@ -16,16 +16,6 @@
     <!-- 使用C3P0数据源，MySQL数据库 -->
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
           destroy-method="close">
-        <!-- MySQL5 -->
-        <!--<property name="driverClass" value="${driverClassName}"></property>
-        <property name="jdbcUrl" value="${url}"></property>
-        <property name="user" value="${username}"></property>
-        <property name="password" value="${password}"></property>
-        <property name="maxPoolSize" value="40"></property>
-        <property name="minPoolSize" value="1"></property>
-        <property name="initialPoolSize" value="1"></property>
-        <property name="maxIdleTime" value="20"></property>-->
-        <!--oracle-->
         <property name="driverClass" value="${jdbc.driver}" />
         <property name="jdbcUrl" value="${jdbc.url}" />
         <property name="user" value="${jdbc.username}" />
