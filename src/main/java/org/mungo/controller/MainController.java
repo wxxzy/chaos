@@ -31,6 +31,6 @@ public class MainController {
     @RequestMapping("/json2")
     //@ResponseBody
     public String json2() {
-        return "login";
+        return "index";
     }
 }
