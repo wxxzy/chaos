@@ -23,10 +23,9 @@ public class MainController {
         return "index";
     }
 
-    @RequestMapping("/json")
-    @ResponseBody
-    public List<BisBatchImportInfo> json(){
-        return  bisBatchImportInfoService.getAllUsernames();
+    @RequestMapping("/main")
+    public String main(){
+        return  "main";
     }
     @RequestMapping("/json2")
     //@ResponseBody
