@@ -6,6 +6,7 @@ import java.util.List;
 public interface  BisBatchImportInfoDao {
     public int save(BisBatchImportInfo u);
     public List<BisBatchImportInfo> findAll();
+    public BisBatchImportInfo getbyId(String id);
 
 }
 

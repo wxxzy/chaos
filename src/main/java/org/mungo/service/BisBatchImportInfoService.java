@@ -11,4 +11,5 @@ import java.util.List;
 public interface BisBatchImportInfoService {
     public void saveUsers(List<BisBatchImportInfo> us);
     public List<BisBatchImportInfo> getAllUsernames();
+    public BisBatchImportInfo getbyId(String id);
 }
