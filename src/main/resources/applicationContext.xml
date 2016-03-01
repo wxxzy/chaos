@@ -18,4 +18,6 @@
        <!-- 扫描文件（自动将servicec层注入） -->
        <context:component-scan base-package="org.mungo.dao"/>
        <context:component-scan base-package="org.mungo.dao.daoImpl"/>
+       <!--<context:component-scan base-package="org.mungo.task"/>-->
+
 </beans>

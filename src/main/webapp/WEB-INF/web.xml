@@ -9,14 +9,14 @@
          http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          metadata-complete="true" version="3.0">
 
-    <display-name>Archetype Created Web Application</display-name>
+    <display-name>Web Application</display-name>
 
     <!-- 起始欢迎界面 -->
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 
-    <!-- springMVC核心配置 -->
+    <!-- springMVC核心配置，声明DispatcherServlet -->
     <servlet>
         <servlet-name>spring-mvc</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -24,8 +24,9 @@
             <param-name>contextConfigLocation</param-name>
             <param-value>classpath*:spring-mvc-servlet.xml</param-value>
         </init-param>
+        <load-on-startup>1</load-on-startup>
     </servlet>
-    <!-- 拦截设置 -->
+    <!-- 拦截设置 ,匹配的url模式-->
     <servlet-mapping>
         <servlet-name>spring-mvc</servlet-name>
         <url-pattern>/</url-pattern>
@@ -68,11 +69,12 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
-    <!-- 读取spring配置文件 -->
+    <!-- 读取spring配置文件 ,业务层和持久层的配置文件，这些配置文件被父spring容器所使用-->
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath*:applicationContext.xml,
-            classpath*:mybatis-infrastructure.xml</param-value>
+            classpath*:mybatis-infrastructure.xml
+        </param-value>
     </context-param>
 
     <listener>
@@ -84,11 +86,6 @@
         <!-- 路径不正确 -->
         <error-code>404</error-code>
         <location>/pages/error/404.jsp</location>
-    </error-page>
-    <error-page>
-        <!-- 没有访问权限，访问被禁止 -->
-        <error-code>405</error-code>
-        <location>/pages/error/405.jsp</location>
     </error-page>
     <error-page>
         <!-- 内部错误 -->

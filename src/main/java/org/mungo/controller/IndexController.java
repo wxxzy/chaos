@@ -12,17 +12,23 @@ import org.springframework.web.servlet.ModelAndView;
  * Created by Mungo on 2015/12/29.
  */
 @Controller
+@RequestMapping("/index")
 public class IndexController {
     @Autowired
     private BisBatchImportInfoService bisBatchImportInfoService;
 
-    @RequestMapping("/index")
+    @RequestMapping("/")
     public ModelAndView getIndex(){
         ModelAndView mav = new ModelAndView("index");
         //BisBatchImportInfo info = bisBatchImportInfoService.getAllUsernames().get(0);
         BisBatchImportInfo info = bisBatchImportInfoService.getbyId("402819814fdfc49d014fe0067fdf03b0");
         mav.addObject("info",info);
         return mav;
+    }
+
+    @RequestMapping("/main")
+    public String register(){
+        return "main";
     }
 
 }
