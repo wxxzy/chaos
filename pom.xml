@@ -8,7 +8,7 @@
   <name>mdesk Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
-  <repositories>
+  <!--<repositories>
     <repository>
       <id>oschina</id>
       <url>http://maven.oschina.net/content/groups/public/</url>
@@ -19,11 +19,11 @@
       <id>oschina</id>
       <url>http://maven.oschina.net/content/groups/public/</url>
     </pluginRepository>
-  </pluginRepositories>
+  </pluginRepositories>-->
 
   <properties>
     <!-- spring版本号 -->
-    <spring.version>4.0.4.RELEASE</spring.version>
+    <spring.version>4.0.0.RELEASE</spring.version>
     <junit.version>3.8.1</junit.version>
     <log4j.version>1.2.12</log4j.version>
     <hibernate.version>4.3.5.Final</hibernate.version>
@@ -67,11 +67,11 @@
       <version>5.1.31</version>
     </dependency>
     <!-- 添加oracle jdbc driver -->
-    <dependency>
+    <!--<dependency>
       <groupId>com.oracle</groupId>
       <artifactId>ojdbc14</artifactId>
       <version>10.2.0.4.0</version>
-    </dependency>
+    </dependency>-->
     <!--为了正常的使用springMVC中的valid，这是因为springMVC中的valid只提供了接口的实现，
     如果想使用这个接口，就必须要导入它的实现——hibernate-validator-->
     <dependency>
@@ -169,7 +169,7 @@
         <artifactId>tomcat-maven-plugin</artifactId>
         <version>1.1</version>
         <configuration>
-          <port>8080</port>
+          <port>9887</port>
         </configuration>
       </plugin>
       <plugin>
