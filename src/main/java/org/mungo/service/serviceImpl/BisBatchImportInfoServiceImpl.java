@@ -17,15 +17,7 @@ import java.util.List;
 public class BisBatchImportInfoServiceImpl implements BisBatchImportInfoService {
     @Autowired
     private BisBatchImportInfoDao bisBatchImportInfoDao;
-    @Override
-    public void saveUsers(List<BisBatchImportInfo> us) {
 
-    }
-
-    @Override
-    public List<BisBatchImportInfo> getAllUsernames() {
-        return bisBatchImportInfoDao.findAll();
-    }
 
     @Override
     public BisBatchImportInfo getbyId(String id) {

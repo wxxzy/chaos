@@ -13,16 +13,6 @@ import java.util.List;
 public class BisBatchImportInfoDaoImpl implements BisBatchImportInfoDao {
 
     @Override
-    public int save(BisBatchImportInfo u) {
-        return 0;
-    }
-
-    @Override
-    public List<BisBatchImportInfo> findAll() {
-        return null;
-    }
-
-    @Override
     public BisBatchImportInfo getbyId(String id) {
         return null;
     }

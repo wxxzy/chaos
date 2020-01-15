@@ -21,7 +21,7 @@ public class MainController {
     public String main(){
         return  "main";
     }
-    @RequestMapping("/json2")
+    @RequestMapping("/x`")
     //@ResponseBody
     public String json2() {
         return "index";
