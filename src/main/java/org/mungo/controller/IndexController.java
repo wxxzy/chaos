@@ -20,9 +20,9 @@ public class IndexController {
     @RequestMapping("/")
     public ModelAndView getIndex(){
         ModelAndView mav = new ModelAndView("index");
-        //BisBatchImportInfo info = bisBatchImportInfoService.getAllUsernames().get(0);
-        BisBatchImportInfo info = bisBatchImportInfoService.getbyId("402819814fdfc49d014fe0067fdf03b0");
-        mav.addObject("info",info);
+
+        //BisBatchImportInfo info = bisBatchImportInfoService.getbyId("402819814fdfc49d014fe0067fdf03b0");
+        //mav.addObject("info",info);
         return mav;
     }
 

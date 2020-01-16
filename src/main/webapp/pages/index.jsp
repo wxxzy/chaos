@@ -51,14 +51,14 @@
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
 
-        <li class="social">
+        <%--<li class="social">
             <!-- Social -->
             <a href="#" class="poshytip  facebook" title="Become a fan"></a>
             <a href="#" class="poshytip  twitter" title="Follow my tweets"></a>
             <a href="#" class="poshytip  dribbble" title="Working on..."></a>
             <a href="#" class="poshytip  forrst" title="Working on..."></a>
             <!-- ENDS Social -->
-        </li>
+        </li>--%>
 
         <li class="search-box">
             <form  method="get" id="searchform" action="#">
